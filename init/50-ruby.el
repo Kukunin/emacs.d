@@ -9,4 +9,8 @@
 
 (require 'smartparens-config)
 
+;;Ruby tools
+(require-package 'ruby-tools)
+(require 'ruby-tools)
+
 (provide '50-ruby)
