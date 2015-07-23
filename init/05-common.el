@@ -1,10 +1,3 @@
-(require 'package)
-(push '("marmalade" . "http://marmalade-repo.org/packages/")
-      package-archives )
-(push '("melpa" . "http://melpa.milkbox.net/packages/")
-      package-archives)
-(package-initialize)
-
 ;; Enable C-u for evil
 (setq evil-want-C-u-scroll t)
 ;; Enable fuzzy match for M-x
@@ -42,4 +35,4 @@
 ;; Disable autocompiling for scss-mode
 (setq scss-compile-at-save nil)
 
-(provide '01-common)
+(provide '05-common)
