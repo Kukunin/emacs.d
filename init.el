@@ -7,4 +7,5 @@
 (require '50-theme)
 (require '51-helm-projectile)
 (require '60-settings)
+(require '61-better-defaults)
 
