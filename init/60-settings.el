@@ -11,7 +11,5 @@
 
 ;; Don't use spring for rspec
 (setq rspec-use-spring-when-possible nil)
-;; Disable autocompiling for scss-mode
-(setq scss-compile-at-save nil)
 
 (provide '60-settings)
