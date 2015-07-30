@@ -7,6 +7,9 @@
 (add-hook 'ruby-mode-hook
   (function (lambda ()
           (setq evil-shift-width ruby-indent-level))))
+(add-hook 'enh-ruby-mode-hook
+  (function (lambda ()
+          (setq evil-shift-width ruby-indent-level))))
 
 (evil-mode 1)
 
