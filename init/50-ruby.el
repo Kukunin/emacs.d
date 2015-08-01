@@ -9,6 +9,10 @@
 ;; Don't use spring for rspec
 (setq rspec-use-spring-when-possible nil)
 
+;; Don't use deep indent
+;; https://github.com/zenspider/enhanced-ruby-mode/issues/87
+(setq enh-ruby-deep-indent-paren nil)
+
 ;; Smartparens is minor mode for Emacs that deals with parens pairs and tries to be smart about it
 (require-package 'smartparens)
 
