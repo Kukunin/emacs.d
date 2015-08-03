@@ -20,7 +20,7 @@
 
 ;; Ruby tools
 (require-package 'ruby-tools)
-(require 'ruby-tools)
+(add-hook 'enh-ruby-mode-hook 'ruby-tools-mode)
 
 (add-hook 'enh-ruby-mode-hook
   (function (lambda ()
