@@ -22,4 +22,8 @@
 (require-package 'ruby-tools)
 (require 'ruby-tools)
 
+(add-hook 'enh-ruby-mode-hook
+  (function (lambda ()
+           (setq projectile-tags-command "ctags --languages=ruby -Re -f \"%s\" %s $(bundle list --paths)"))))
+
 (provide '50-ruby)

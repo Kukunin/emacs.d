@@ -4,6 +4,15 @@
 (require 'auto-complete-config)
 (ac-config-default)
 
+;; ac-etags
+(require-package 'ac-etags)
+(eval-after-load "etags"
+  '(progn
+      (ac-etags-setup)))
+
+;; Enable etags for Ruby
+(add-hook 'enh-ruby-mode-hook 'ac-etags-ac-setup)
+
 ;;; Better ido
 (require-package 'flx-ido)
 (require 'flx-ido)
