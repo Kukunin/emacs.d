@@ -4,4 +4,6 @@
 ;; Delete trailing whitespaces
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
+(setq column-number-mode t)
+
 (provide '60-settings)
