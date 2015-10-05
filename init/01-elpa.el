@@ -6,17 +6,13 @@
 (package-initialize)
 
 ;;; On-demand installation of packages
-(defun require-package (package &optional min-version no-refresh)
-  "Install given PACKAGE, optionally requiring MIN-VERSION.
-  If NO-REFRESH is non-nil, the available package lists will not be
-  re-downloaded in order to locate PACKAGE."
+(defun require-package (package &optional min-version)
+  "Install given PACKAGE, optionally requiring MIN-VERSION."
   (if (package-installed-p package min-version)
     t
-    (if (or (assoc package package-archive-contents) no-refresh)
-      (package-install package)
-      (progn
-	(package-refresh-contents)
-	(require-package package min-version t)))))
+    (progn
+      (package-refresh-contents)
+      (package-install package))))
 
 
 (provide '01-elpa)
