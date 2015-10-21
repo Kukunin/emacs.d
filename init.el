@@ -2,6 +2,7 @@
 
 (require '01-elpa)
 (require '10-shell)
+(require '15-ui)
 (require '49-flycheck)
 (require '50-evil)
 (require '50-web)
