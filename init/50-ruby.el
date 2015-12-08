@@ -26,4 +26,12 @@
   (function (lambda ()
            (setq projectile-tags-command "ctags --languages=ruby -Re -f \"%s\" %s . $(bundle list --paths)"))))
 
+;; Bundle
+(require-package 'bundler)
+
+;; Projectile-Rails
+(require-package 'projectile-rails)
+(add-hook 'projectile-mode-hook 'projectile-rails-on)
+
+
 (provide '50-ruby)
