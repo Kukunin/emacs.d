@@ -6,6 +6,7 @@
 ;; Disable autocompiling for scss-mode
 (setq scss-compile-at-save nil)
 
+(setq coffee-tab-width 2)
 (setq css-indent-offset 2)
 
 (provide '50-web)
