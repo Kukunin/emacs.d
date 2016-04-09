@@ -2,6 +2,7 @@
 (require-package 'haml-mode)
 (require-package 'less-css-mode)
 (require-package 'scss-mode)
+(require-package 'yaml-mode)
 
 ;; Disable autocompiling for scss-mode
 (setq scss-compile-at-save nil)
