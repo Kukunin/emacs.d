@@ -11,6 +11,7 @@
 (require '51-elixir)
 (require '51-helm-projectile)
 (require '55-autocomplete)
+(require '55-org)
 (require '60-settings)
 (require '61-better-defaults)
 
