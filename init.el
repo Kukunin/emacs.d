@@ -10,6 +10,7 @@
 (require '50-theme)
 (require '51-elixir)
 (require '51-helm-projectile)
+(require '52-csharp)
 (require '55-autocomplete)
 (require '55-org)
 (require '60-settings)
