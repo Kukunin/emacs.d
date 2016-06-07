@@ -8,6 +8,7 @@
 (require '50-web)
 (require '50-ruby)
 (require '50-theme)
+(require '51-elixir)
 (require '51-helm-projectile)
 (require '55-autocomplete)
 (require '60-settings)
