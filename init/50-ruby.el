@@ -24,5 +24,9 @@
 (require-package 'projectile-rails)
 (add-hook 'projectile-mode-hook 'projectile-rails-on)
 
+;; Ruby Refactor
+(require-package 'ruby-refactor)
+(require 'ruby-refactor)
+(add-hook 'ruby-mode-hook 'ruby-refactor-mode-launch)
 
 (provide '50-ruby)
