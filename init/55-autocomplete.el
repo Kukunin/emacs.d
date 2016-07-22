@@ -18,6 +18,10 @@
 ;; Enable etags for Ruby
 (add-hook 'ruby-mode-hook 'ac-etags-ac-setup)
 
+;; RSpec for auto-complete
+(eval-after-load 'rspec-mode
+  '(rspec-install-snippets))
+
 ;;; Better ido
 (require-package 'flx-ido)
 (require 'flx-ido)
