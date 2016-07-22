@@ -1,8 +1,13 @@
-(require-package 'auto-complete)
+;; Enable yasnippet
+(require-package 'yasnippet)
+(yas-global-mode 1)
 
-;; Configuration
+;; AutoComplete
+(require-package 'auto-complete)
 (require 'auto-complete-config)
 (ac-config-default)
+
+(setq-default ac-sources (push 'ac-source-yasnippet ac-sources))
 
 ;; ac-etags
 (require-package 'ac-etags)
@@ -22,9 +27,5 @@
 ;; disable ido faces to see flx highlights.
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
-
-;; Enable yasnippet
-(require-package 'yasnippet)
-(require 'yasnippet-bundle)
 
 (provide '55-autocomplete)
