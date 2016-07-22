@@ -23,4 +23,8 @@
 (setq ido-enable-flex-matching t)
 (setq ido-use-faces nil)
 
+;; Enable yasnippet
+(require-package 'yasnippet)
+(require 'yasnippet-bundle)
+
 (provide '55-autocomplete)
