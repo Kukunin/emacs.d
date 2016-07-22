@@ -2,4 +2,7 @@
 
 (require 'better-defaults)
 
+;; Set visible bell back to nil
+(setq visible-bell nil)
+
 (provide '61-better-defaults)
