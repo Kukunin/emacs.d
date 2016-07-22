@@ -11,7 +11,7 @@
       (ac-etags-setup)))
 
 ;; Enable etags for Ruby
-(add-hook 'enh-ruby-mode-hook 'ac-etags-ac-setup)
+(add-hook 'ruby-mode-hook 'ac-etags-ac-setup)
 
 ;;; Better ido
 (require-package 'flx-ido)
